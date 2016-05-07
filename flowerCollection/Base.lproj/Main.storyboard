@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="flowerCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rose" translatesAutoresizingMaskIntoConstraints="NO" id="gjh-4X-Kus">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gjh-4X-Kus" secondAttribute="height" multiplier="30:29" id="NNH-1J-BWj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Dv-ZR-zK1">
+                                <rect key="frame" x="20" y="28" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Usm-2a-FqM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DT-tJ-ESc">
+                                <rect key="frame" x="238" y="404" width="124" height="124"/>
+                                <state key="normal" image="butterfly124x124"/>
+                                <connections>
+                                    <action selector="onTappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pOh-dO-np4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gjh-4X-Kus" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="2ww-49-0g7"/>
+                            <constraint firstItem="9DT-tJ-ESc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Spg-3j-t6W"/>
+                            <constraint firstItem="gjh-4X-Kus" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="VY6-RV-6w5"/>
+                            <constraint firstItem="9Dv-ZR-zK1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="fK8-a4-VQU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9DT-tJ-ESc" secondAttribute="bottom" constant="72" id="jSR-Vt-vBc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gjh-4X-Kus" secondAttribute="trailing" constant="-20" id="jdI-aX-Opc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gjh-4X-Kus" secondAttribute="bottom" id="m8d-Dh-FKx"/>
+                            <constraint firstItem="9Dv-ZR-zK1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uhq-HK-Ral"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="flowerImageView" destination="gjh-4X-Kus" id="9bb-zA-XP7"/>
+                        <outlet property="flowerLabel" destination="9Dv-ZR-zK1" id="Z30-a3-eVu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="289"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="butterfly124x124" width="124" height="124"/>
+        <image name="rose" width="618" height="268"/>
+    </resources>
+</document>

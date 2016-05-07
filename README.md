@@ -1,2 +1,2 @@
-# FlowerCollection
+# flowerCollection
 sample study.
